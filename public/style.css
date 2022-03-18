@@ -1,0 +1,67 @@
+
+
+h1{
+    font-size: 70px;
+    color: rgb(87, 145, 192);
+    margin-bottom: 30px;
+    padding-bottom: 30px
+    ;
+ }
+ 
+ form{
+    text-align: center;
+ }
+  .ligne2{
+    background: url('https://thumbs.dreamstime.com/b/zen-flowers-sur-l-eau-dans-l-%C3%A9cran-g%C3%A9ant-51541220.jpg');
+    background-repeat: no-repeat;
+    background-position: center;  
+    border: 1px solid  rgb(87, 145, 192);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding: 24;
+    align-items: center;
+    text-align: center;
+ }   
+ 
+ .colGauche {
+     float: left;
+     text-align: center;
+     
+ }
+ 
+ .colMilieu {
+     overflow: hidden;
+     text-align: center;
+ }
+ 
+ .colDroite{
+     float: right;
+     text-align: center; 
+ }
+ 
+ .ligne3{
+    background-color: rgb(87, 145, 192);  
+    border: 1px solid  white;
+    border-radius: 30px;
+ }
+ 
+   #btnAjout, #btnModif,#btnSupp, #btnClose {
+    background-color:rgb(87, 145, 192);
+    padding: 10px;
+    border: 1px solid rgb(87, 145, 192);
+    border-radius: 30px;
+    width: 150px;
+    color: black;
+ }
+ 
+ .labl {
+    background-color:snow;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+ }
+ 
+ 
+ 
