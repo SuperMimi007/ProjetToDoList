@@ -12,7 +12,7 @@ installer
 express
 installer mysql
 
-# utilisation 
+# Utilisation 
 1. aller dans l'invit commande 
 2. indiquer cd + chemin d'accès au fichier app.js
 3. lancer le serveur avec node app.js
