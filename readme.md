@@ -1,18 +1,18 @@
 
 
 
-#Introduction
+# Introduction
 
 Creation d'un dossier TODOV4 permettant l'accès à une page web d'une todo list 
 
 
-#Installation
+# Installation
 installer node
 installer
 express
 installer mysql
 
-#utilisation 
+# utilisation 
 1. aller dans l'invit commande 
 2. indiquer cd + chemin d'accès au fichier app.js
 3. lancer le serveur avec node app.js
@@ -24,15 +24,17 @@ installer mysql
 app js : 
 - permet la connection à Express 
 - un app.get pour se connecter à la base SQL et récupérer les données dans la page web
-- 3 app.post => créer des taches
-                modifier des taches
-                supprimer des taches
+- 3 app.post => 
+créer des taches
+modifier des taches
+supprimer des taches
 - app.listen connection au port 
 
 db_utils.js
 - permet la connection à la base SQL 
-- 4 fonctions impactant les données de la base SQL =>       récupérer les données de la base    
-                                                            créer des taches
-                                                            modifier des taches
-                                                            supprimer des taches
+- 4 fonctions impactant les données de la base SQL =>       
+récupérer les données de la base    
+créer des taches
+modifier des taches
+supprimer des taches
 
