@@ -23,7 +23,7 @@ function ShowToDoList(results) {
     <div class="container">
         <div class="row ligne2">
             <div class="col-12">
-            <h1 align="center">TO DO LIST</h1> 
+            <marquee direction="right" scrollamount="10"><h1 align="center"> MIMI'S TO DO LIST</h1> </marquee>
                 <div class="col-4 colGauche">
                     <button id = "btnAjout" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#Ajout">
@@ -112,12 +112,13 @@ function ShowToDoList(results) {
                             <div class="modal-body">
                                 <form method="post" action="/Supprimer" enctype="application/x-www-form-urlencoded">
                                 <input class ="c1" type = "text" name="id" id="id" placeholder="indiquer Id"> 
-                                </form>
                             </div>
                             <div class="modal-footer">
-                                <button id=btnModif type="submit" value="Supprimer">Supprimer</button>
+                                <button id=btnSuppFinal type="submit" value="Supprimer" onclick "animer()">Supprimer</button>
                                 <button id=btnClose type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <div id ="icone" st></div>    
                             </div>
+                                </form>    
                         </div>
                     </div>
                 </div>
@@ -172,6 +173,14 @@ function ShowToDoList(results) {
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+        <script>
+        <div id = "popUp>
+            const popUp = document.querySelector ("#btnSuppFinal")
+            popUp.onclick = () =>{
+              alert ("Suppression effectuée");
+            };
+        </div>   
+        </script>
     
 </body>
 </html>`

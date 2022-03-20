@@ -1,5 +1,5 @@
 //importation de la librairie
-var mysql      = require('mysql');
+var mysql = require('mysql');
 
  
 function connectToMySQL(){
