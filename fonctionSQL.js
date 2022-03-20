@@ -1,6 +1,5 @@
-/* 
 
-Formater mes taches 
+/*Formater mes taches 
 function FormatTask(task){
         let deadline = task['deadline'].formaterDateFr
     }
@@ -54,7 +53,7 @@ switch (statut) {
 
 statutTache();
 
-/* Fonction pour la priorite de la tache 
+ Fonction pour la priorite de la tache 
 
 switch priorite () {
     case '1':

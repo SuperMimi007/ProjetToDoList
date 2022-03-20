@@ -19,6 +19,7 @@ app.get('/get-todo', (req, res) => {
      })
 })
 
+//pour fichier react
 app.get("/get-todo-json", (req, res) => {
 
   console.log("oui")
@@ -39,7 +40,6 @@ app.post('/Ajouter', (request, response) => {
   })
 })
 
-// supprimer une tache
 app.post('/supprimer', (request, response) => {
   console.log ("request",request)
   let formData = [request.body['id']]

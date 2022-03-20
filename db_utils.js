@@ -1,5 +1,5 @@
 //importation de la librairie
-var mysql = require('mysql');
+var mysql      = require('mysql');
 
  
 function connectToMySQL(){
@@ -94,13 +94,11 @@ function updateTask(values_to_update,apres_modification){
 }
 
 
+
+
 module.exports = {
   Gettodolist: Gettodolist,
   insertTask : insertTask,
   deleteTask : deleteTask,
   updateTask : updateTask,
 }
-
-// pour le planning 
-// function buildLineTaskHtml(task) {
-//   let deadline = task['deadline'].toLocaleDateString('fr')

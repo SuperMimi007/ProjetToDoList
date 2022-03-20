@@ -26,17 +26,19 @@ h1{
  .colGauche {
      float: left;
      text-align: center;
-     
+     display: inline-block;
  }
  
  .colMilieu {
-     overflow: hidden;
+     overflow:hidden;
      text-align: center;
+     display: inline-block;
  }
  
  .colDroite{
      float: right;
-     text-align: center; 
+     text-align: center;
+     display: inline-block;
  }
  
  .ligne3{
@@ -45,7 +47,7 @@ h1{
     border-radius: 30px;
  }
  
-   #btnAjout, #btnModif,#btnSupp, #btnClose {
+   #btnAjout, #btnModif,#btnSupp, #btnClose, #btnSuppFinal {
     background-color:rgb(87, 145, 192);
     padding: 10px;
     border: 1px solid rgb(87, 145, 192);
@@ -53,7 +55,8 @@ h1{
     width: 150px;
     color: black;
  }
- 
+
+
  .labl {
     background-color:snow;
     padding: 10px;
@@ -62,6 +65,5 @@ h1{
     margin-bottom: 10px;
     width: 300px;
  }
- 
  
  
