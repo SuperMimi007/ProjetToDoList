@@ -1,4 +1,4 @@
-
+const fct = require('./db_utils')
 
 
 function ShowToDoList(results) {
@@ -47,7 +47,7 @@ function ShowToDoList(results) {
                                         placeholder="indiquer priorite" required>
                                     <input class="labl" type="text" name="statut" class="form-control" id="statut"
                                         placeholder="indiquer statut" required>
-                                    <input class="labl" type="date" name="deadline" min="today" class="form-control" id="deadline"
+                                    <input class="labl" type="date" name="deadline" value=${fct.dDay()} min=${fct.dDay()} class="form-control" id="deadline"
                                         placeholder="indiquer deadline" required>
                                     <div class="modal-footer">
                                     <button id=btnModif type="submit" value="Ajouter">Ajouter</button>
@@ -84,7 +84,7 @@ function ShowToDoList(results) {
                                         placeholder="indiquer priorite" required>
                                     <input class="labl" type="text" name="statut" class="form-control" id="statut"
                                         placeholder="indiquer statut" required>
-                                    <input class="labl" type="date" name="deadline" min="today" class="form-control" id="deadline"
+                                    <input class="labl" type="date" name="deadline" value=${fct.dDay()} min=${fct.dDay()} class="form-control" id="deadline"
                                         placeholder="indiquer deadline" required>
                                 <div class="modal-footer">
                                     <button id=btnModif type="submit" value="Modifier">Modifier</button>
