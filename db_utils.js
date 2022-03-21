@@ -93,6 +93,20 @@ function updateTask(values_to_update,apres_modification){
   })
 }
 
+
+  function padTo2Digits (num){
+    return num.toString().padStart (2, '0');
+  }
+
+  function formatDate(date){
+    return[
+      padTo2Digits (date.getDate ()),
+      padTo2Digits (date.getMonth () +1),
+      date.getFullYear(),
+    ].join ('/');
+  }
+
+
 function dDay() {
   let inputFormat = Date();
   function pad(s) { return (s < 10) ? '0' + s : s; }
@@ -101,10 +115,47 @@ function dDay() {
 }
 
 
+function statutTache (statut){
+switch (statut) {
+    case '1':
+    statut  = "ToDo";
+    break;
+    case '2':
+    statut = "Ongoing";
+    break;
+    case '3':
+    statut  = "Finish";
+    break;
+    default:
+      statut  = "undefined";
+}
+return statut
+}
+
+function prioTache (priorite){
+switch (priorite) {
+  case '1':
+  priorite  = "high";
+  break;
+  case '2':
+  priorite = "medium";
+  break;
+  case '3':
+  priorite  = "low";
+  break;
+  default:
+  priorite  = "undefined";
+}
+return priorite
+}
+
 module.exports = {
   Gettodolist: Gettodolist,
   insertTask : insertTask,
   deleteTask : deleteTask,
   updateTask : updateTask,
-  dDay : dDay 
+  formatDate : formatDate,
+  statutTache : statutTache,
+  prioTache : prioTache,
+  dDay : dDay, 
 }
