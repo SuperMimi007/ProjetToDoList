@@ -175,7 +175,7 @@ function ShowToDoList(results) {
                         </form>
                     </tr>`
     }
-    html = `${html}
+        html = `${html}
                 </table>
             </div>
         </div>       

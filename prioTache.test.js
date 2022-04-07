@@ -2,7 +2,6 @@ const ft = require ('./html');
 const db = require ('./db_utils');
 
 
-
 /*describe('test prioTache',() =>{
         expect (db.prioTache(1)).toBe(importante);
         expect (db.prioTache(2)).toBe(moyenne);
@@ -26,4 +25,3 @@ describe('Priortie des taches test', () => {
     ))
  
 })
-

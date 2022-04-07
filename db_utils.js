@@ -152,7 +152,6 @@ switch (priorite) {
 return priorite
 }
 
-
 module.exports = {
   Gettodolist: Gettodolist,
   insertTask : insertTask,
