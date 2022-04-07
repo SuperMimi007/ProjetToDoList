@@ -7,7 +7,7 @@ Ce projet consiste en la création d'une todolist dans lequel nous pouvons faire
 Il est possible d'ajouter le nom de la personne en charge, la priorité, le statut et la deadline.
 5 versions ont été nécessaire afin de faire évoluer ce projet
 
-##Installation
+Installation
 
 Afin d'utiliser le projet sur la page web, il vous faudra effectuer les installations suivantes : 
 node / express / mysql /jest /json
@@ -24,7 +24,7 @@ Afin 'accéder à la page web il faudra effectuer la commande suivante :
 
 --- 
 
-## Descriptif du projets 
+## Descriptif du projet 
 1. Dossier Public => comprends le fichier style.css
 2. app js => permet la connection à Express 
 app.get pour se connecter à la base SQL et récupérer les données dans la page web
