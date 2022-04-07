@@ -23,6 +23,8 @@ function ShowToDoList(results) {
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="alert.css" />
+    <script type="text/javascript" src="alert.js"></script>
 
     <title>MIMI TO DO LIST</title>
     <link rel="stylesheet" href="style.css">
@@ -31,9 +33,10 @@ function ShowToDoList(results) {
 
 <body>
     <div class="container">
-        <div class="row ligne2">
+        <div class="row ligne1">
             <div class="col-12">
                 <marquee direction="right" scrollamount="10"><h1 align="center"> MIMI'S TO DO LIST</h1> </marquee>
+
                 <div class="col-4 colGauche">
                     <button id = "btnAjout" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#Ajout">
@@ -60,8 +63,8 @@ function ShowToDoList(results) {
                                     <input class="labl" type="date" name="deadline" value=${fct.dDay()} min=${fct.dDay()} class="form-control" id="deadline"
                                         placeholder="indiquer deadline" required>
                                     <div class="modal-footer">
-                                    <button id=btnModif type="submit" value="Ajouter">Ajouter</button>
-                                    <button id=btnClose type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button id=btnAjout type="submit" value="Ajouter" onclick="alert('Ajouté avec succès')">Ajouter</button>
+                                    <button id=btnClose type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                                     </div>
                                     </form>
                                 </div>
@@ -97,8 +100,8 @@ function ShowToDoList(results) {
                                     <input class="labl" type="date" name="deadline" value=${fct.dDay()} min=${fct.dDay()} class="form-control" id="deadline"
                                         placeholder="indiquer deadline" required>
                                 <div class="modal-footer">
-                                    <button id=btnModif type="submit" value="Modifier">Modifier</button>
-                                    <button id=btnClose type="button" data-bs-dismiss="modal">Close</button>
+                                <button id=btnModif type="submit" value="Modifier" onclick="alert('Modifié avec succès')">Modifier</button>
+                                    <button id=btnClose type="button" data-bs-dismiss="modal">Fermer</button>
                                 </div>    
                                 </form>
                             </div>    
@@ -121,22 +124,20 @@ function ShowToDoList(results) {
                                 </div>
                                 <div class="modal-body">
                                     <form method="post" action="/Supprimer" enctype="application/x-www-form-urlencoded">
-                                        <input class="labl" type="text" name="id" class="form-control" id="id" placeholder="indiquer id"
-                                            required>
+                                        <input class="labl" type="text" name="id" class="form-control" id="id" placeholder="indiquer id"required>
                                             <div class="modal-footer">
-                                            <button id=btnSuppFinal type="submit" value="Supprimer">Supprimer</button>
-                                            <button id=btnClose type="button" data-bs-dismiss="modal">Close</button>
-                                            </div>
+                                                <button id=btnSuppFinal type="submit" value="Supprimer" onclick="alert('Supprimé avec succès')">Supprimer</button>
+                                                <button id=btnClose type="button" data-bs-dismiss="modal">Fermer</button>
+                                            </div>     
                                     </form>
                                 </div>
-                                    
                             </div>
                         </div>
                     </div>
             </div>
         </div>   
-             
-        <div class="row ligne3">
+
+        <div class="row ligne2">
             <div class="col-12">
                 <table class="table mb-0">
                     <thead class="titreTab">
@@ -149,8 +150,8 @@ function ShowToDoList(results) {
                             <th>deadline</th>
                         </tr>
                     </thead>`
-                    for (let task of results) {
-                    html = `${html}
+    for (let task of results) {
+        html = `${html}
                     <tr class="fw-normal" align="center">
                         <form method="post" action="/traitement-formulaire" enctype="application/x-www-form-urlencoded">
                             <td>
@@ -166,20 +167,20 @@ function ShowToDoList(results) {
                                 ${fd.prioTache(task['priorite'])}
                             </td>
                             <td>
-                                ${fc.statutTache(task ['statut'])}
+                                ${fc.statutTache(task['statut'])}
                             </td>
                             <td>
-                                ${ft.formatDate(task ['deadline'])}
+                                ${ft.formatDate(task['deadline'])}
                             </td>
                         </form>
                     </tr>`
-                    }
-                    html = `${html}
+    }
+    html = `${html}
                 </table>
             </div>
-        </div>
+        </div>       
     </div>
-    
+
 </body>
 </html>`
 
@@ -190,4 +191,3 @@ function ShowToDoList(results) {
 module.exports = {
     ShowToDoList: ShowToDoList,
 }
-

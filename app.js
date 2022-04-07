@@ -40,6 +40,7 @@ app.post('/Ajouter', (request, response) => {
   })
 })
 
+// supprimer une tache
 app.post('/supprimer', (request, response) => {
   console.log ("request",request)
   let formData = [request.body['id']]
@@ -60,6 +61,8 @@ app.post('/Modifier', (request, response) => {
     console.log (request.body)
   })
 })
+
+
 
 
 

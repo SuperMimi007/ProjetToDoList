@@ -112,22 +112,25 @@ function dDay() {
   function pad(s) { return (s < 10) ? '0' + s : s; }
   var d = new Date(inputFormat)
   return [d.getFullYear(), pad(d.getMonth() + 1), pad(d.getDate())].join('-')
+  if (Date < dDay) {
+
+  }
 }
 
 
 function statutTache (statut){
 switch (statut) {
     case '1':
-    statut  = "ToDo";
+    statut  = "A faire";
     break;
     case '2':
-    statut = "Ongoing";
+    statut = "En cours";
     break;
     case '3':
-    statut  = "Finish";
+    statut  = "Terminée";
     break;
     default:
-      statut  = "undefined";
+      statut  = "A confirmer";
 }
 return statut
 }
@@ -135,19 +138,20 @@ return statut
 function prioTache (priorite){
 switch (priorite) {
   case '1':
-  priorite  = "high";
+  priorite  = "importante";
   break;
   case '2':
-  priorite = "medium";
+  priorite = "moyenne";
   break;
   case '3':
-  priorite  = "low";
+  priorite  = "faible";
   break;
   default:
-  priorite  = "undefined";
+  priorite  = "a confirmer";
 }
 return priorite
 }
+
 
 module.exports = {
   Gettodolist: Gettodolist,
@@ -158,4 +162,5 @@ module.exports = {
   statutTache : statutTache,
   prioTache : prioTache,
   dDay : dDay, 
+
 }
