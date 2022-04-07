@@ -37,7 +37,7 @@ contient la partie front, visible de l'utilisateur
 5. react.html
 Utilisation de la methode react pour le projet
 6. readme.md
-7. test unitaire.js
+7. prioTache.test.js
 
 --- 
 
