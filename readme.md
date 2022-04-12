@@ -7,7 +7,7 @@ Ce projet consiste en la création d'une todolist dans lequel nous pouvons faire
 Il est possible d'ajouter le nom de la personne en charge, la priorité, le statut et la deadline.
 5 versions ont été nécessaire afin de faire évoluer ce projet
 
-##Installation
+## Installation
 
 Afin d'utiliser le projet sur la page web, il vous faudra effectuer les installations suivantes : 
 node / express / mysql
