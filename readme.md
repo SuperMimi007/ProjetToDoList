@@ -7,10 +7,10 @@ Ce projet consiste en la création d'une todolist dans lequel nous pouvons faire
 Il est possible d'ajouter le nom de la personne en charge, la priorité, le statut et la deadline.
 5 versions ont été nécessaire afin de faire évoluer ce projet
 
-Installation
+##Installation
 
 Afin d'utiliser le projet sur la page web, il vous faudra effectuer les installations suivantes : 
-node / express / mysql /jest /json
+node / express / mysql
 
 --- 
 
@@ -24,7 +24,7 @@ Afin 'accéder à la page web il faudra effectuer la commande suivante :
 
 --- 
 
-## Descriptif du projet 
+## Descriptif du projets 
 1. Dossier Public => comprends le fichier style.css
 2. app js => permet la connection à Express 
 app.get pour se connecter à la base SQL et récupérer les données dans la page web
@@ -37,7 +37,8 @@ contient la partie front, visible de l'utilisateur
 5. react.html
 Utilisation de la methode react pour le projet
 6. readme.md
-7. prioTache.test.js
+7. test_prioTache.js 
+Test unitaire (lancer via le terminal pour exécuter le fichier js)
 
 --- 
 
